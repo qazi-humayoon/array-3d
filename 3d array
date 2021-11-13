@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int arr[100][100][100];
+	int a,b,c,i,j,k;
+	
+	cout<<"enter the size of array=";
+	cin>>a;
+	cout<<"enter the size of array";
+	cin>>b;
+	cout<<"enter the size of array";
+	cin>>c;
+	
+	for(i=0;i<a;i++)
+	{
+		for(j=0;j<b;j++)
+		{
+			for(k=0;k<c;k++)
+			{
+				cin>>arr[i][j][k];
+			}
+		}
+	}
+	cout<<endl;
+	for(i=0;i<a;i++)
+	{
+		for(j=0;j<b;j++)
+		{
+			for(k=0;k<c;k++)
+			{
+				cout<<arr[i][j][k]<<" ";
+			}
+				cout<<endl;
+	   	}
+			cout<<endl;
+	}
+	cout<<endl;
+	return 0;
+}
